@@ -1,5 +1,5 @@
 const h1 = document.querySelector("h1")
-h1.innerHTML = "Mensch Ärgere dich nicht!"
+h1.innerHTML = "Don't get Angry!"
 
 const gameColors = ["blue", "red", "yellow", "green"]
 const playerColors = ["blue", "red", "yellow", "green"]
@@ -34,18 +34,6 @@ game = new Game({
 })
 
 game.mainLoop()   
-
-
-/* 
-
-bugs: 
-        - klick position bei bildschirm veränderung
-        - animate blinking blinkt auf home position anders als auf path
-
-features:
-        - computer spielen lassen (singleplayer)
-        - auswählen ob multiplayer oder singleplayer
-*/
 
 
 

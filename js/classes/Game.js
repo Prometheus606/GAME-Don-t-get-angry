@@ -61,7 +61,7 @@ class Game {
         
         //show dice and player text from the current player
         this.dices[this.currentPlayer.color].show()
-        for (const player of this.players[this.currentPlayer.color]) player.setText(this.currentPlayer.color.toUpperCase() + " ist dran!")
+        for (const player of this.players[this.currentPlayer.color]) player.setText(this.currentPlayer.color.toUpperCase() + "'s turn!")
         
     }
 
@@ -129,7 +129,7 @@ class Game {
         if (this.currentPlayer.diceNumber !== 6 && !this.currentPlayer.isMoving) this.nextPlayer()
             else {
                 this.dices[this.currentPlayer.color].clear()
-                for (const player of this.players[this.currentPlayer.color]) player.setText(this.currentPlayer.color.toUpperCase() + " ist nochmal!")
+                for (const player of this.players[this.currentPlayer.color]) player.setText(this.currentPlayer.color.toUpperCase() + " is again!")
             }
     }
 
@@ -205,7 +205,7 @@ class Game {
     
     
             this.dices[this.currentPlayer.color].show()
-            for (const player of this.players[this.currentPlayer.color]) player.setText(this.currentPlayer.color.toUpperCase() + " ist dran!")
+            for (const player of this.players[this.currentPlayer.color]) player.setText(this.currentPlayer.color.toUpperCase() + "'s turn!")
     }
 
     /** 
@@ -234,7 +234,7 @@ class Game {
         this.currentPlayer.canChooseFigure = false
         this.currentPlayer.canMove = false
         this.currentPlayer.isMoving = false
-        h1.innerHTML = "Spieler " + this.currentPlayer.color + " hat gewonnen!"
+        h1.innerHTML = "Player " + this.currentPlayer.color + " has won!"
         
     }
 
